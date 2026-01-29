@@ -1,0 +1,93 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    🎯 FINAL STEP: RUN SQL IN SUPABASE                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ Environment variables configured
+✅ Supabase client installed
+✅ API route updated
+✅ Dev server restarted
+
+📋 NOW DO THIS:
+
+1. Open Supabase Dashboard:
+   👉 https://supabase.com/dashboard/project/fyngiujeoiigkbpsjqpb
+
+2. Click "SQL Editor" in the left sidebar
+
+3. Click "New Query"
+
+4. Open the file: supabase-setup.sql (in your project root)
+
+5. Copy ALL the SQL code from that file
+
+6. Paste it into the Supabase SQL Editor
+
+7. Click "Run" (or press Ctrl+Enter)
+
+8. You should see: ✅ "RSVP table created successfully!"
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           🧪 TEST THE INTEGRATION                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+After running the SQL:
+
+1. Open: http://localhost:3000
+
+2. Fill out the RSVP form with test data
+
+3. Click "Submit RSVP"
+
+4. Go to Supabase Dashboard → Table Editor → rsvp_responses
+
+5. You should see your test submission! 🎉
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          📊 VIEW YOUR DATA                                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Option 1: Supabase Dashboard
+- Table Editor → rsvp_responses
+- View, filter, export to CSV
+
+Option 2: API Endpoint
+- Visit: http://localhost:3000/api/rsvp
+- See statistics (total, attending, tentative, unable)
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        🚀 DEPLOYMENT CHECKLIST                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+When deploying to Vercel:
+
+1. Go to Vercel Project Settings → Environment Variables
+
+2. Add these 3 variables:
+   ✓ NEXT_PUBLIC_SUPABASE_URL
+   ✓ NEXT_PUBLIC_SUPABASE_ANON_KEY
+   ✓ SUPABASE_SERVICE_ROLE_KEY
+
+3. Copy values from your .env.local file
+
+4. Redeploy
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           🔒 SECURITY NOTES                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ .env.local is in .gitignore (secrets are safe)
+✅ Row Level Security (RLS) is enabled
+✅ Public can only INSERT (submit RSVPs)
+✅ Only service role can SELECT (read data)
+✅ Email uniqueness prevents duplicates
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         📞 NEED HELP?                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Check these if something goes wrong:
+
+1. Browser Console (F12) - for frontend errors
+2. Terminal/Server Logs - for backend errors
+3. Supabase Dashboard → Logs → API - for database errors
+4. SUPABASE_SETUP.md - full troubleshooting guide
