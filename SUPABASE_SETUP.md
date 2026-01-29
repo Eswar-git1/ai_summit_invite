@@ -7,7 +7,7 @@ This guide will help you complete the Supabase integration for storing RSVP resp
 
 ## ✅ Step 1: Create the Database Table
 
-1. Go to your Supabase Dashboard: https://supabase.com/dashboard/project/fyngiujeoiigkbpsjqpb
+1. Go to your Supabase Dashboard: https://supabase.com/dashboard/project/your_project_id
 2. Click on **SQL Editor** in the left sidebar
 3. Click **"New Query"**
 4. Copy and paste the entire contents of `supabase-setup.sql` (in the project root)
@@ -43,7 +43,7 @@ This will create:
 
 ```env
 # Supabase Configuration
-NEXT_PUBLIC_SUPABASE_URL=https://fyngiujeoiigkbpsjqpb.supabase.co
+NEXT_PUBLIC_SUPABASE_URL=https://your_project_id.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_publishable_anon_key_here
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_secret_key_here
 ```
@@ -52,9 +52,9 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_secret_key_here
 
 **Example:**
 ```env
-NEXT_PUBLIC_SUPABASE_URL=https://fyngiujeoiigkbpsjqpb.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+NEXT_PUBLIC_SUPABASE_URL=https://your_project_id.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI...
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI...
 ```
 
 ---
