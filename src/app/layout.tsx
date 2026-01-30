@@ -7,6 +7,7 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
+import { AnalyticsProvider } from "@/components/AnalyticsProvider";
 
 export const metadata: Metadata = {
   title: "Defence Panel RSVP | India AI Impact Summit & Expo 2026",
@@ -43,7 +44,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#1a237e" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        <AnalyticsProvider>{children}</AnalyticsProvider>
+      </body>
     </html>
   );
 }
