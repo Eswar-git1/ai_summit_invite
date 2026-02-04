@@ -228,7 +228,7 @@ export default function DefencePanelRSVP() {
                 </div>
                 <div className="session-item">
                   <span className="session-item__label">Time</span>
-                  <span className="session-item__value">1530 hrs – 1625 hrs</span>
+                  <span className="session-item__value">0930 hrs – 1025 hrs</span>
                 </div>
                 <div className="session-item session-item--full">
                   <span className="session-item__label">Venue</span>
@@ -247,7 +247,26 @@ export default function DefencePanelRSVP() {
           </div>
         </section>
 
-        {/* Important Notice */}
+        {/* Event Information - Indian Army Participation */}
+        <section className="section" aria-labelledby="event-info-title">
+          <div className="notice notice--army">
+            <div className="notice__header">
+              <span className="notice__icon">🛡️</span>
+              <h2 id="event-info-title" className="notice__title">
+                Indian Army at the Summit
+              </h2>
+            </div>
+            <p className="notice__text">
+              The Indian Army is participating in the <strong>India AI Impact Summit & Expo 2026</strong>,
+              held from <strong>16–20 February 2026</strong> at <strong>Bharat Mandapam, New Delhi</strong>.
+              <br /><br />
+              Visit the Indian Army's exhibition at <strong>Stall No. 4F-33</strong>
+              showcasing <strong>AI-enabled defence technologies</strong> and ongoing digital transformation initiatives.
+            </p>
+          </div>
+        </section>
+
+        {/* Important Notice - Registration */}
         <section className="section" aria-labelledby="notice-title">
           <div className="notice">
             <div className="notice__header">
