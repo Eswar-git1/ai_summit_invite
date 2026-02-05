@@ -575,15 +575,15 @@ export default function DefencePanelRSVP() {
             <Image
               src="/images/DGIS logo.png"
               alt="DGIS"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
               className="footer__logo footer__logo--dgis"
             />
             <Image
               src="/images/AI Summit logo.png"
               alt="India AI Summit"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
               className="footer__logo footer__logo--summit"
             />
           </div>

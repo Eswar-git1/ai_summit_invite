@@ -1526,7 +1526,7 @@ body {
 }
 
 .footer__logo {
-  height: 60px;
+  height: 120px;
   width: auto;
   transition: var(--transition-normal);
 }
@@ -1537,7 +1537,7 @@ body {
 
 /* Footer Indian Army logo - Transparent background */
 .footer__logo--army {
-  height: 60px;
+  height: 120px;
   width: auto;
   filter: none;
   background: transparent;
@@ -1545,7 +1545,7 @@ body {
 
 /* Footer DGIS logo - Transparent PNG */
 .footer__logo--dgis {
-  height: 60px;
+  height: 120px;
   width: auto;
   filter: none;
   background: transparent;
@@ -1553,7 +1553,7 @@ body {
 
 /* Footer AI Summit logo - make white */
 .footer__logo--summit {
-  height: 60px;
+  height: 120px;
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.7;
