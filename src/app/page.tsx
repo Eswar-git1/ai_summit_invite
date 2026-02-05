@@ -12,6 +12,7 @@ import { useState, FormEvent, ChangeEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NeuralBackground from "@/components/NeuralBackground";
+import CountdownTimer from "@/components/CountdownTimer";
 
 // RSVP Status options
 type RSVPStatus = "attending" | "not_attending" | "tentative";
@@ -147,8 +148,16 @@ export default function DefencePanelRSVP() {
       {/* Hero Header */}
       <header className="hero">
         <div className="hero__content">
-          {/* Logos */}
+          {/* Logos - Hierarchy: Indian Army, DGIS, AI Summit */}
           <div className="hero__logos">
+            <Image
+              src="/images/indian-army-logo-transparent.png"
+              alt="Indian Army"
+              width={120}
+              height={120}
+              className="hero__logo hero__logo--army"
+              priority
+            />
             <Image
               src="/images/DGIS logo.png"
               alt="DGIS - Directorate General of Information Systems"
@@ -246,6 +255,21 @@ export default function DefencePanelRSVP() {
             </div>
           </div>
         </section>
+
+        {/* Countdown Timer */}
+        <section className="section" aria-labelledby="countdown-title">
+          <h2 id="countdown-title" className="section__title">
+            <span className="section__title-icon">⏰</span>
+            Time Until Event
+            <span className="section__title-line" />
+          </h2>
+          <div className="card card--glass">
+            <div className="card__body">
+              <CountdownTimer />
+            </div>
+          </div>
+        </section>
+
 
         {/* Event Information - Indian Army Participation */}
         <section className="section" aria-labelledby="event-info-title">
@@ -541,6 +565,14 @@ export default function DefencePanelRSVP() {
         <div className="footer__content">
           <div className="footer__logos">
             <Image
+              src="/images/indian-army-logo-transparent.png"
+              alt="Indian Army"
+              width={120}
+              height={120}
+              className="hero__logo hero__logo--army"
+              priority
+            />
+            <Image
               src="/images/DGIS logo.png"
               alt="DGIS"
               width={60}
@@ -550,8 +582,8 @@ export default function DefencePanelRSVP() {
             <Image
               src="/images/AI Summit logo.png"
               alt="India AI Summit"
-              width={130}
-              height={45}
+              width={60}
+              height={60}
               className="footer__logo footer__logo--summit"
             />
           </div>

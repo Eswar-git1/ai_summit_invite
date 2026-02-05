@@ -138,18 +138,26 @@ export default function PanelistsPage() {
                 <div className="hero__content">
                     <div className="hero__logos">
                         <Image
+                            src="/images/indian-army-logo-transparent.png"
+                            alt="Indian Army"
+                            width={120}
+                            height={120}
+                            className="hero__logo hero__logo--army"
+                            priority
+                        />
+                        <Image
                             src="/images/DGIS logo.png"
                             alt="DGIS Logo"
-                            width={100}
-                            height={100}
+                            width={120}
+                            height={120}
                             className="hero__logo hero__logo--dgis"
                             priority
                         />
                         <Image
                             src="/images/AI Summit logo.png"
                             alt="India AI Impact Summit Logo"
-                            width={200}
-                            height={70}
+                            width={120}
+                            height={120}
                             className="hero__logo hero__logo--summit"
                             priority
                         />
@@ -409,6 +417,13 @@ export default function PanelistsPage() {
                 <div className="footer__content">
                     <div className="footer__logos">
                         <Image
+                            src="/images/indian-army-logo-transparent.png"
+                            alt="Indian Army"
+                            width={60}
+                            height={60}
+                            className="footer__logo footer__logo--army"
+                        />
+                        <Image
                             src="/images/DGIS logo.png"
                             alt="DGIS"
                             width={60}
@@ -418,8 +433,8 @@ export default function PanelistsPage() {
                         <Image
                             src="/images/AI Summit logo.png"
                             alt="India AI Summit"
-                            width={130}
-                            height={45}
+                            width={60}
+                            height={60}
                             className="footer__logo footer__logo--summit"
                         />
                     </div>
