@@ -228,12 +228,12 @@ export default function DefencePanelRSVP() {
                 </div>
                 <div className="session-item">
                   <span className="session-item__label">Time</span>
-                  <span className="session-item__value">0930 hrs – 1025 hrs</span>
+                  <span className="session-item__value">9:30:00 AM – 10:25:00 AM</span>
                 </div>
                 <div className="session-item session-item--full">
                   <span className="session-item__label">Venue</span>
                   <span className="session-item__value">
-                    Nalanda Auditorium, Dr Ambedkar International Centre, New Delhi
+                    West Wing Room 6, Bharat Mandapam, New Delhi
                   </span>
                 </div>
                 <div className="session-item session-item--full">
