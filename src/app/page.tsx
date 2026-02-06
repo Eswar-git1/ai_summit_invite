@@ -151,7 +151,7 @@ export default function DefencePanelRSVP() {
           {/* Logos - Hierarchy: Indian Army, DGIS, AI Summit */}
           <div className="hero__logos">
             <Image
-              src="/images/indian-army-logo-transparent.png"
+              src="/images/IA-logo-1.png"
               alt="Indian Army"
               width={120}
               height={120}
@@ -565,7 +565,7 @@ export default function DefencePanelRSVP() {
         <div className="footer__content">
           <div className="footer__logos">
             <Image
-              src="/images/indian-army-logo-transparent.png"
+              src="/images/IA-logo-1.png"
               alt="Indian Army"
               width={120}
               height={120}
