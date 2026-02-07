@@ -27,7 +27,7 @@ const keynote = {
         "Indian Army's vision for AI-enabled capability development and integration",
     ],
     about: [
-        "Deputy Chief of Army Staff (Information Systems & Technology), responsible for digital and technology transformation of the Indian Army",
+        "Deputy Chief of Army Staff (Information Systems & Training), responsible for digital and technology transformation of the Indian Army",
         "Armoured Corps officer with extensive command and operational experience across strike formations and corps level",
         "Awarded AVSM and Sena Medal for distinguished service; alumnus of NDA, DSSC and National Defence College",
     ],
