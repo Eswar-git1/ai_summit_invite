@@ -107,6 +107,24 @@ const panelMembers = [
             "Expert in deploying AI at scale for mission-critical, high-reliability environments",
         ],
     },
+    // 5. Madhumita Mohapatra - Global Supply Chain Management for AI Hardware
+    {
+        name: "Madhumita Mohapatra",
+        designation: "Industry Leader",
+        organization: "",
+        image: "/images/Mrs Madhumita.JPG",
+        topic: "Global Supply Chain Management for AI Hardware",
+        speakingOn: [
+            "Building resilient and scalable global supply chains for AI hardware ecosystems",
+            "Supply chain challenges in AI-driven defence and industrial applications",
+            "Integrating Industry 4.0 principles to enhance transparency, agility, and traceability in hardware supply chains",
+        ],
+        about: [
+            "Partner at Deloitte, Office Managing Partner, and senior leader in the Growth Office, heading the Defence & Aerospace business",
+            "Over 28 years of experience operating at the intersection of national security, emerging technologies, and global defence ecosystems",
+            "Recognised for structuring and delivering complex, multi-stakeholder transformation programs for governments and armed forces",
+        ],
+    },
 ];
 
 // Moderator
@@ -138,7 +156,15 @@ export default function PanelistsPage() {
                 <div className="hero__content">
                     <div className="hero__logos">
                         <Image
-                            src="/images/IA-logo-1.png"
+                            src="/images/AI Summit logo.png"
+                            alt="India AI Impact Summit Logo"
+                            width={120}
+                            height={120}
+                            className="hero__logo hero__logo--summit"
+                            priority
+                        />
+                        <Image
+                            src="/images/Indian Army Logo.png"
                             alt="Indian Army"
                             width={120}
                             height={120}
@@ -146,19 +172,11 @@ export default function PanelistsPage() {
                             priority
                         />
                         <Image
-                            src="/images/DGIS logo.png"
-                            alt="DGIS Logo"
+                            src="/images/YND Logo.jpeg"
+                            alt="YND Logo"
                             width={120}
                             height={120}
-                            className="hero__logo hero__logo--dgis"
-                            priority
-                        />
-                        <Image
-                            src="/images/AI Summit logo.png"
-                            alt="India AI Impact Summit Logo"
-                            width={120}
-                            height={120}
-                            className="hero__logo hero__logo--summit"
+                            className="hero__logo hero__logo--ynd"
                             priority
                         />
                     </div>
@@ -357,6 +375,59 @@ export default function PanelistsPage() {
                             </article>
                         ))}
                     </div>
+
+                    {/* Fifth panel member */}
+                    <div className="panelists-featured-grid mt-lg">
+                        {panelMembers.slice(4, 5).map((panelist, index) => (
+                            <article key={index} className="panelist-card panelist-card--featured-half">
+                                <div className="panelist-card__image-container">
+                                    <Image
+                                        src={panelist.image}
+                                        alt={panelist.name}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 280px"
+                                        className="panelist-card__image"
+                                    />
+                                    <div className="panelist-card__overlay" />
+                                </div>
+                                <div className="panelist-card__content">
+                                    <h3 className="panelist-card__name">{panelist.name}</h3>
+                                    <p className="panelist-card__designation">{panelist.designation}</p>
+                                    {panelist.organization && (
+                                        <p className="panelist-card__organization">{panelist.organization}</p>
+                                    )}
+
+                                    <div className="panelist-card__topic-badge">{panelist.topic}</div>
+
+                                    {/* Speaking On */}
+                                    <div className="panelist-card__section">
+                                        <h4 className="panelist-card__section-title">
+                                            <span className="panelist-card__section-icon">🎯</span>
+                                            Speaking On
+                                        </h4>
+                                        <ul className="panelist-card__list panelist-card__list--topics">
+                                            {panelist.speakingOn.map((point, i) => (
+                                                <li key={i}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    {/* About */}
+                                    <div className="panelist-card__section">
+                                        <h4 className="panelist-card__section-title">
+                                            <span className="panelist-card__section-icon">👤</span>
+                                            About
+                                        </h4>
+                                        <ul className="panelist-card__list panelist-card__list--about">
+                                            {panelist.about.map((point, i) => (
+                                                <li key={i}>{point}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
                 </section>
 
                 {/* 3. MODERATOR (1) */}
@@ -417,25 +488,25 @@ export default function PanelistsPage() {
                 <div className="footer__content">
                     <div className="footer__logos">
                         <Image
-                            src="/images/IA-logo-1.png"
+                            src="/images/AI Summit logo.png"
+                            alt="India AI Summit"
+                            width={120}
+                            height={120}
+                            className="footer__logo footer__logo--summit"
+                        />
+                        <Image
+                            src="/images/Indian Army Logo.png"
                             alt="Indian Army"
                             width={120}
                             height={120}
                             className="footer__logo footer__logo--army"
                         />
                         <Image
-                            src="/images/DGIS logo.png"
-                            alt="DGIS"
+                            src="/images/YND Logo.jpeg"
+                            alt="YND"
                             width={120}
                             height={120}
-                            className="footer__logo footer__logo--dgis"
-                        />
-                        <Image
-                            src="/images/AI Summit logo.png"
-                            alt="India AI Summit"
-                            width={120}
-                            height={120}
-                            className="footer__logo footer__logo--summit"
+                            className="footer__logo footer__logo--ynd"
                         />
                     </div>
                     <p className="footer__disclaimer">

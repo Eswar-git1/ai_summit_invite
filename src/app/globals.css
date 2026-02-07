@@ -556,6 +556,40 @@ body {
 }
 
 /* ========================================
+   AI WARFARE BANNER
+   ======================================== */
+
+.ai-banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-army-darkest);
+  margin: 0;
+  padding: 0;
+}
+
+.ai-banner__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+@media (min-width: 768px) {
+  .ai-banner__image {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ai-banner__image {
+    max-height: 600px;
+  }
+}
+
+/* ========================================
    CARDS & SECTIONS
    ======================================== */
 
@@ -728,6 +762,19 @@ body {
   color: var(--color-text-primary);
   line-height: 1.7;
   margin-bottom: var(--space-md);
+}
+
+.notice__email {
+  color: var(--color-army);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-army-light);
+  transition: var(--transition-fast);
+}
+
+.notice__email:hover {
+  color: var(--color-army-light);
+  border-bottom-color: var(--color-army);
 }
 
 .notice__link {

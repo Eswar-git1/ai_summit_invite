@@ -148,10 +148,18 @@ export default function DefencePanelRSVP() {
       {/* Hero Header */}
       <header className="hero">
         <div className="hero__content">
-          {/* Logos - Hierarchy: Indian Army, DGIS, AI Summit */}
+          {/* Logos - Hierarchy: AI Summit, Indian Army, YND */}
           <div className="hero__logos">
             <Image
-              src="/images/IA-logo-1.png"
+              src="/images/AI Summit logo.png"
+              alt="India AI Impact Summit Logo"
+              width={120}
+              height={120}
+              className="hero__logo hero__logo--summit"
+              priority
+            />
+            <Image
+              src="/images/Indian Army Logo.png"
               alt="Indian Army"
               width={120}
               height={120}
@@ -159,19 +167,11 @@ export default function DefencePanelRSVP() {
               priority
             />
             <Image
-              src="/images/DGIS logo.png"
-              alt="DGIS - Directorate General of Information Systems"
+              src="/images/YND Logo.jpeg"
+              alt="YND Logo"
               width={120}
               height={120}
-              className="hero__logo hero__logo--dgis"
-              priority
-            />
-            <Image
-              src="/images/AI Summit logo.png"
-              alt="India AI Impact Summit Logo"
-              width={120}
-              height={120}
-              className="hero__logo hero__logo--summit"
+              className="hero__logo hero__logo--ynd"
               priority
             />
           </div>
@@ -213,6 +213,18 @@ export default function DefencePanelRSVP() {
           Panelists
         </Link>
       </nav>
+
+      {/* AI Warfare Hero Banner */}
+      <section className="ai-banner" aria-label="AI-Enabled Warfare Theme">
+        <Image
+          src="/images/AI enabled warfare.png"
+          alt="AI-Enabled Warfare - Indian Army"
+          width={1920}
+          height={600}
+          className="ai-banner__image"
+          priority
+        />
+      </section>
 
       {/* Main Content */}
       <main className="container">
@@ -290,7 +302,6 @@ export default function DefencePanelRSVP() {
           </div>
         </section>
 
-        {/* Important Notice - Registration */}
         <section className="section" aria-labelledby="notice-title">
           <div className="notice">
             <div className="notice__header">
@@ -304,6 +315,8 @@ export default function DefencePanelRSVP() {
               <br />
               All participants must mandatorily register on the official Summit
               website to gain entry to the venue.
+              <br /><br />
+              For theme-specific queries, please contact: <a href="mailto:amitmehna.587a@gov.in" className="notice__email">amitmehna.587a@gov.in</a>
             </p>
             <a
               href="https://impact.indiaai.gov.in/registration"
@@ -565,7 +578,15 @@ export default function DefencePanelRSVP() {
         <div className="footer__content">
           <div className="footer__logos">
             <Image
-              src="/images/IA-logo-1.png"
+              src="/images/AI Summit logo.png"
+              alt="India AI Summit"
+              width={120}
+              height={120}
+              className="footer__logo footer__logo--summit"
+              priority
+            />
+            <Image
+              src="/images/Indian Army Logo.png"
               alt="Indian Army"
               width={120}
               height={120}
@@ -573,18 +594,11 @@ export default function DefencePanelRSVP() {
               priority
             />
             <Image
-              src="/images/DGIS logo.png"
-              alt="DGIS"
+              src="/images/YND Logo.jpeg"
+              alt="YND"
               width={120}
               height={120}
-              className="footer__logo footer__logo--dgis"
-            />
-            <Image
-              src="/images/AI Summit logo.png"
-              alt="India AI Summit"
-              width={120}
-              height={120}
-              className="footer__logo footer__logo--summit"
+              className="footer__logo footer__logo--ynd"
             />
           </div>
           <p className="footer__disclaimer">
