@@ -158,22 +158,24 @@ export default function DefencePanelRSVP() {
               className="hero__logo hero__logo--summit"
               priority
             />
-            <Image
-              src="/images/Indian Army Logo.png"
-              alt="Indian Army"
-              width={120}
-              height={120}
-              className="hero__logo hero__logo--army"
-              priority
-            />
-            <Image
-              src="/images/YND Logo.jpeg"
-              alt="YND Logo"
-              width={120}
-              height={120}
-              className="hero__logo hero__logo--ynd"
-              priority
-            />
+            <div className="hero__logos-row">
+              <Image
+                src="/images/Indian Army Logo.png"
+                alt="Indian Army"
+                width={120}
+                height={120}
+                className="hero__logo hero__logo--army"
+                priority
+              />
+              <Image
+                src="/images/YND Logo.jpg"
+                alt="YND Logo"
+                width={120}
+                height={120}
+                className="hero__logo hero__logo--ynd"
+                priority
+              />
+            </div>
           </div>
 
           {/* Invitation Message */}
@@ -585,21 +587,23 @@ export default function DefencePanelRSVP() {
               className="footer__logo footer__logo--summit"
               priority
             />
-            <Image
-              src="/images/Indian Army Logo.png"
-              alt="Indian Army"
-              width={120}
-              height={120}
-              className="hero__logo hero__logo--army"
-              priority
-            />
-            <Image
-              src="/images/YND Logo.jpeg"
-              alt="YND"
-              width={120}
-              height={120}
-              className="footer__logo footer__logo--ynd"
-            />
+            <div className="footer__logos-row">
+              <Image
+                src="/images/Indian Army Logo.png"
+                alt="Indian Army"
+                width={120}
+                height={120}
+                className="footer__logo footer__logo--army"
+                priority
+              />
+              <Image
+                src="/images/YND Logo.jpg"
+                alt="YND"
+                width={120}
+                height={120}
+                className="footer__logo footer__logo--ynd"
+              />
+            </div>
           </div>
           <p className="footer__disclaimer">
             Nomination or invitation by the Indian Army does not replace official
