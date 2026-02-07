@@ -173,7 +173,7 @@ export default function PanelistsPage() {
                                 priority
                             />
                             <Image
-                                src="/images/YND Logo.jpg"
+                                src="/images/ynd logo 2.png"
                                 alt="YND Logo"
                                 width={120}
                                 height={120}
@@ -505,7 +505,7 @@ export default function PanelistsPage() {
                                 className="footer__logo footer__logo--army"
                             />
                             <Image
-                                src="/images/YND Logo.jpg"
+                                src="/images/ynd logo 2.png"
                                 alt="YND"
                                 width={120}
                                 height={120}
