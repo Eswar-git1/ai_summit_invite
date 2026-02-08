@@ -59,8 +59,8 @@ export async function GET(request: NextRequest) {
             responsesByDate[date] = (responsesByDate[date] || 0) + 1;
         });
 
-        // Recent responses (last 10)
-        const recentResponses = responses.slice(0, 10).map((r) => ({
+        // All responses
+        const recentResponses = responses.map((r) => ({
             id: r.id,
             name: r.name,
             appointment: r.appointment,
