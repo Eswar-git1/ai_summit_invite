@@ -4,7 +4,7 @@
  * 
  * Structure:
  * - 1 Keynote Speaker: Lt Gen Vipul Shinghal (DCOAS)
- * - 4 Panel Members: Lt Gen Harsh Chhibber, Maj Gen Pawan Anand, Dr Vikram Jayaram, Prof. Ganesh Ramakrishnan
+ * - 5 Panel Members: Lt Gen Harsh Chhibber, Prof. Ganesh Ramakrishnan, Maj Gen Pawan Anand, Dr Vikram Jayaram, Mrs Sudeepta Veerapaneni
  * - 1 Moderator: Mr Subimal Bhattacharjee
  * 
  * Information sourced from official deck (EXACT)
@@ -105,6 +105,25 @@ const panelMembers = [
             "Industry leader with over two decades of experience in AI and machine learning systems",
             "Former Head of R&D and Data Science at Pioneer Natural Resources (ExxonMobil group)",
             "Expert in deploying AI at scale for mission-critical, high-reliability environments",
+        ],
+    },
+    // 5. Mrs Sudeepta Veerapaneni - Global Supply Chain Management for AI Hardware
+    {
+        name: "Sudeepta Veerapaneni",
+        designation: "Industry Expert",
+        organization: "",
+        image: "/images/Mrs Sudeepta.jpeg",
+        topic: "Global Supply Chain Management for AI Hardware",
+        speakingOn: [
+            "Building resilient and scalable global supply chains for AI hardware ecosystems",
+            "Supply chain challenges in AI-driven defence and industrial applications",
+            "Integrating Industry 4.0 principles to enhance transparency, agility, and traceability in hardware supply chains",
+
+        ],
+        about: [
+            "Partner and Chief Innovation Officer, Deloitte South Asia, driving innovation-led business transformation",
+            "Deep expertise in Industry 4.0 and smart manufacturing, with a strong focus on aerospace and industrial goods",
+            "Proven leader in leveraging emerging technologies to build agile, resilient, and transparent global supply chains",
         ],
     },
 ];
@@ -244,7 +263,7 @@ export default function PanelistsPage() {
                     </article>
                 </section>
 
-                {/* 2. PANEL MEMBERS (4) */}
+                {/* 2. PANEL MEMBERS (5) */}
                 <section className="section" aria-labelledby="panelists-title">
                     <h2 id="panelists-title" className="section__title">
                         <span className="section__title-icon">👥</span>
@@ -305,9 +324,9 @@ export default function PanelistsPage() {
                         ))}
                     </div>
 
-                    {/* Remaining two panel members */}
+                    {/* Remaining three panel members */}
                     <div className="panelists-featured-grid mt-lg">
-                        {panelMembers.slice(2, 4).map((panelist, index) => (
+                        {panelMembers.slice(2, 5).map((panelist, index) => (
                             <article key={index} className="panelist-card panelist-card--featured-half">
                                 <div className="panelist-card__image-container">
                                     <Image
