@@ -360,6 +360,16 @@ body {
   align-items: center;
   gap: var(--space-xl);
   margin-bottom: var(--space-xl);
+  flex-direction: column;
+  /* Always stack vertically */
+}
+
+/* Row for secondary logos - Army and YND side by side */
+.hero__logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
   flex-wrap: wrap;
 }
 
@@ -401,6 +411,13 @@ body {
   height: 95px;
   filter: brightness(0) invert(1);
   opacity: 0.95;
+  background: transparent !important;
+}
+
+/* YND logo */
+.hero__logo--ynd {
+  height: 95px;
+  filter: none;
   background: transparent !important;
 }
 
@@ -553,6 +570,40 @@ body {
 .nav__link--active:hover {
   background: var(--color-army-light);
   color: var(--color-white);
+}
+
+/* ========================================
+   AI WARFARE BANNER
+   ======================================== */
+
+.ai-banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-army-darkest);
+  margin: 0;
+  padding: 0;
+}
+
+.ai-banner__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+@media (min-width: 768px) {
+  .ai-banner__image {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ai-banner__image {
+    max-height: 600px;
+  }
 }
 
 /* ========================================
@@ -728,6 +779,19 @@ body {
   color: var(--color-text-primary);
   line-height: 1.7;
   margin-bottom: var(--space-md);
+}
+
+.notice__email {
+  color: var(--color-army);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-army-light);
+  transition: var(--transition-fast);
+}
+
+.notice__email:hover {
+  color: var(--color-army-light);
+  border-bottom-color: var(--color-army);
 }
 
 .notice__link {
@@ -1522,6 +1586,16 @@ body {
   align-items: center;
   gap: var(--space-xl);
   margin-bottom: var(--space-lg);
+  flex-direction: column;
+  /* Always stack vertically */
+}
+
+/* Row for secondary logos - Army and YND side by side */
+.footer__logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
   flex-wrap: wrap;
 }
 
@@ -1557,6 +1631,14 @@ body {
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.7;
+}
+
+/* Footer YND logo */
+.footer__logo--ynd {
+  height: 120px;
+  width: auto;
+  filter: none;
+  background: transparent;
 }
 
 .footer__copyright {

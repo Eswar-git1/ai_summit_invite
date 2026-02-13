@@ -319,7 +319,7 @@ export default function AdminDashboard() {
                 <section className="section">
                     <div className="card">
                         <div className="card__header">
-                            <h2 className="card__title">Recent Responses</h2>
+                            <h2 className="card__title">All RSVP Responses</h2>
                             <button onClick={fetchDashboardData} className="btn btn--sm">
                                 🔄 Refresh
                             </button>
