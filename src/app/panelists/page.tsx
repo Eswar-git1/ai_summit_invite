@@ -4,7 +4,7 @@
  * 
  * Structure:
  * - 1 Keynote Speaker: Lt Gen Vipul Shinghal (DCOAS)
- * - 5 Panel Members: Lt Gen Harsh Chhibber, Prof. Ganesh Ramakrishnan, Maj Gen Pawan Anand, Dr Vikram Jayaram, Mrs Sudeepta Veerapaneni
+ * - 4 Panel Members: Lt Gen Harsh Chhibber, Maj Gen Pawan Anand, Dr Vikram Jayaram, Prof. Ganesh Ramakrishnan
  * - 1 Moderator: Mr Subimal Bhattacharjee
  * 
  * Information sourced from official deck (EXACT)
@@ -264,11 +264,7 @@ export default function PanelistsPage() {
                     </article>
                 </section>
 
-<<<<<<< HEAD
                 {/* 2. PANEL MEMBERS (All 5) */}
-=======
-                {/* 2. PANEL MEMBERS (5) */}
->>>>>>> 5ce16d4d8c28131587025b4aecdb93e0b6b268d7
                 <section className="section" aria-labelledby="panelists-title">
                     <h2 id="panelists-title" className="section__title">
                         <span className="section__title-icon">👥</span>
@@ -277,117 +273,7 @@ export default function PanelistsPage() {
                     </h2>
 
                     <div className="panelists-featured-grid">
-<<<<<<< HEAD
                         {panelMembers.map((panelist, index) => (
-=======
-                        {panelMembers.slice(0, 2).map((panelist, index) => (
-                            <article key={index} className="panelist-card panelist-card--featured-half">
-                                <div className="panelist-card__image-container">
-                                    <Image
-                                        src={panelist.image}
-                                        alt={panelist.name}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 280px"
-                                        className="panelist-card__image"
-                                    />
-                                    <div className="panelist-card__overlay" />
-                                </div>
-                                <div className="panelist-card__content">
-                                    <h3 className="panelist-card__name">{panelist.name}</h3>
-                                    <p className="panelist-card__designation">{panelist.designation}</p>
-                                    {panelist.organization && (
-                                        <p className="panelist-card__organization">{panelist.organization}</p>
-                                    )}
-
-                                    <div className="panelist-card__topic-badge">{panelist.topic}</div>
-
-                                    {/* Speaking On */}
-                                    <div className="panelist-card__section">
-                                        <h4 className="panelist-card__section-title">
-                                            <span className="panelist-card__section-icon">🎯</span>
-                                            Speaking On
-                                        </h4>
-                                        <ul className="panelist-card__list panelist-card__list--topics">
-                                            {panelist.speakingOn.map((point, i) => (
-                                                <li key={i}>{point}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    {/* About */}
-                                    <div className="panelist-card__section">
-                                        <h4 className="panelist-card__section-title">
-                                            <span className="panelist-card__section-icon">👤</span>
-                                            About
-                                        </h4>
-                                        <ul className="panelist-card__list panelist-card__list--about">
-                                            {panelist.about.map((point, i) => (
-                                                <li key={i}>{point}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-
-                    {/* Remaining three panel members */}
-                    <div className="panelists-featured-grid mt-lg">
-                        {panelMembers.slice(2, 5).map((panelist, index) => (
-                            <article key={index} className="panelist-card panelist-card--featured-half">
-                                <div className="panelist-card__image-container">
-                                    <Image
-                                        src={panelist.image}
-                                        alt={panelist.name}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 280px"
-                                        className="panelist-card__image"
-                                    />
-                                    <div className="panelist-card__overlay" />
-                                </div>
-                                <div className="panelist-card__content">
-                                    <h3 className="panelist-card__name">{panelist.name}</h3>
-                                    <p className="panelist-card__designation">{panelist.designation}</p>
-                                    {panelist.organization && (
-                                        <p className="panelist-card__organization">{panelist.organization}</p>
-                                    )}
-
-                                    <div className="panelist-card__topic-badge">{panelist.topic}</div>
-
-                                    {/* Speaking On */}
-                                    <div className="panelist-card__section">
-                                        <h4 className="panelist-card__section-title">
-                                            <span className="panelist-card__section-icon">🎯</span>
-                                            Speaking On
-                                        </h4>
-                                        <ul className="panelist-card__list panelist-card__list--topics">
-                                            {panelist.speakingOn.map((point, i) => (
-                                                <li key={i}>{point}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-
-                                    {/* About */}
-                                    <div className="panelist-card__section">
-                                        <h4 className="panelist-card__section-title">
-                                            <span className="panelist-card__section-icon">👤</span>
-                                            About
-                                        </h4>
-                                        <ul className="panelist-card__list panelist-card__list--about">
-                                            {panelist.about.map((point, i) => (
-                                                <li key={i}>{point}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-
-                    {/* Fifth panel member */}
-                    <div className="panelists-featured-grid mt-lg">
-                        {panelMembers.slice(4, 5).map((panelist, index) => (
->>>>>>> 5ce16d4d8c28131587025b4aecdb93e0b6b268d7
                             <article key={index} className="panelist-card panelist-card--featured-half">
                                 <div className="panelist-card__image-container">
                                     <Image
