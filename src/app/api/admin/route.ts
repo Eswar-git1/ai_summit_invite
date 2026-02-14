@@ -72,7 +72,8 @@ export async function GET(request: NextRequest) {
         // Fetch page analytics
         const { data: analytics, error: analyticsError } = await supabase
             .from("page_analytics")
-            .select("*");
+            .select("*")
+            .range(0, 99999);
 
         let pageVisits = {
             totalVisits: 0,
